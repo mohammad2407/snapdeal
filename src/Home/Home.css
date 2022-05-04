@@ -1,0 +1,46 @@
+.categories-logo{
+    margin-right: 5px;
+    height: 28px;
+    width: 28px;
+    background-color: #d6e4ec;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    margin-right: 8px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+    color: #cbcbcb !important;
+    margin-top: 6px;
+}
+
+.left-nav{
+    box-shadow: 0 4px 17px 0 rgb(0 0 0 / 10%);
+    background: #fff;
+    border: #9a9191;
+}
+
+.categories-text{
+    font-size: 13px;
+    color: #9a9191 !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+}
+
+
+.categories:hover .hover-line{
+    display: block;
+    width: 1.6%;
+    background-color: #e40046;
+    
+}
+.categories:hover{
+    background-color: #f0eeee;
+}
+
+
+.categories{
+    box-sizing: border-box;
+    height: 42px
+}
