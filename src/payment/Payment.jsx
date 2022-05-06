@@ -4,6 +4,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Address } from './Address';
 import { Summary } from './Summary';
+import { Review } from './Review';
+import { MakePayment } from './MakePayment';
 const Payment = () => {
     const[login,setLogin] = useState({
         loginSec1:true,
@@ -160,12 +162,14 @@ const Payment = () => {
                 <li>
                     <div>
                         <div className='payment-txt '>3.REVIEW ORDER</div>
+                        <Review />
                     </div>
                 </li>
 
                 <li>
                     <div>
                         <div className='payment-txt '>4.MAKE PAYMENT</div>
+                        <MakePayment />
                     </div>
                 </li>
 

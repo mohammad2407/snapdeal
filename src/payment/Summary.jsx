@@ -3,7 +3,7 @@ import React from 'react'
 export const Summary = () => {
   return (
     <div >
-        <div className='review-wrapper' style={{padding:'0px',}}>
+        <div className='summary-wrapper' style={{padding:'0px',}}>
             <div className='product-sec' style={{borderBottom:'0.1px dashed #ccc' }}>
              <div>SUMMARY ( {} )</div>
              <div className='product-name'> 

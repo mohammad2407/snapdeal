@@ -95,3 +95,23 @@ label {
       transform: translate(10px 0px)  ;
     
   }
+
+  .review-product{
+    background-color: lightblue;
+    height: auto 100px;
+    width: 100%;
+
+    overflow-y:scroll;
+  }
+  #element{
+      display: none;
+      height: 40px;
+      background-color: aqua;
+      width: 100%;
+  }
+  #show{
+      display:block;
+      height: 40px;
+      background-color: aqua;
+      width: 100%;
+  }
