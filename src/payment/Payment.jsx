@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './payment.css'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Address } from './Address';
+import { Summary } from './Summary';
 const Payment = () => {
     const[login,setLogin] = useState({
         loginSec1:true,
@@ -15,7 +17,7 @@ const Payment = () => {
 
     const fixedPos = () =>{
   
-        if(window.scrollY >= 75){
+        if(window.scrollY >= 50){
             setLoginPos(true)
         }
         else setLoginPos(false)
@@ -37,13 +39,14 @@ const Payment = () => {
       </div>
 
       <div >
-          <div className='payment-login'>
+          <div className= 'payment-login' >
             <ul className='payment-ul' style={{listStyle:'none', textAlign:'left', margin:'1px -40px', width:'69%'}} >
-                <li>
+                <li className='payment-li'>
+                    
                     <div className='show-btn'>
-                        <p className='payment-txt' >1.Log In/Sign Up</p>
+                        <div className='payment-txt' >1.Log In/Sign Up</div>
                         <div className='show-content'>
-                            {/* <form action="" style={{marginLeft:'40px'}}>
+                            <form action="" style={{marginLeft:'40px'}}>
                                 <div style={{
                                     fontSize:'13px',
                                     margin:'10px 0px',
@@ -68,8 +71,9 @@ const Payment = () => {
                                         background:'#e40046',
                                         outline:'none',
                                         border:'none',
-                                        height:'30px',
-                                        color:'#fff'
+                                        height:'43px',
+                                        color:'#fff',
+                                        borderRadius:'3px'
                                     }}>
                                             CONTINUE
                                       
@@ -101,9 +105,9 @@ const Payment = () => {
 
                                         </div>
                                     </div>                          
-                            </form> */}
+                            </form>
 
-                            {/* <div className='otp-sec' style={{padding:'2%', position:'relative'}}>
+                            <div className='otp-sec' style={{padding:'2%', position:'relative'}}>
                                 <div style={{padding:'1% 4% '}}>
 
                                 <div
@@ -126,7 +130,7 @@ const Payment = () => {
                                     <input type="text" placeholder='Code' style={{padding:'1% 2%', marginLeft:'18%', marginBottom:'10px', width:'15%', textAlign:'center', outline:'#8a8787'}} /> <br />
                                             <a href="" style={{textDecoration:'none', color:'#1f95d5', margin:'10px 21%', fontSize:'14px'}}>Resend OTP</a> <br />
 
-                                    <input type='button' value = 'continue' style = {{
+                                    <input type='button' value = 'CONTINUE' style = {{
                                         width:'50%',
                                         background:'#e40046',
                                         height:'34px',
@@ -140,7 +144,7 @@ const Payment = () => {
                                     }}  />
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                            
                         </div>
                     </div>
@@ -148,24 +152,29 @@ const Payment = () => {
 
                 <li>
                     <div>
-                        <p className='payment-txt '>2.DELIVERY ADDRESS</p>
+                        <div className='payment-txt '>2.DELIVERY ADDRESS</div>
+                        <Address />
                     </div>
                 </li>
 
                 <li>
                     <div>
-                        <p className='payment-txt '>3.REVIEW ORDER</p>
+                        <div className='payment-txt '>3.REVIEW ORDER</div>
                     </div>
                 </li>
 
                 <li>
                     <div>
-                        <p className='payment-txt '>4.MAKE PAYMENT</p>
+                        <div className='payment-txt '>4.MAKE PAYMENT</div>
                     </div>
                 </li>
 
             </ul>
+            <div className={loginPos? 'summary sum-pos-rel':'summary sum-pos-fix'} style={{float:'right'}}>
+                <Summary />
             </div>
+            </div>
+
       </div>
     </div>
   )
