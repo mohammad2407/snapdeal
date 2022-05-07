@@ -6,6 +6,7 @@ import { Address } from './Address';
 import { Summary } from './Summary';
 import { Review } from './Review';
 import { MakePayment } from './MakePayment';
+import { Link } from 'react-router-dom';
 const Payment = () => {
     const[login,setLogin] = useState({
         loginSec1:true,
@@ -31,9 +32,12 @@ const Payment = () => {
     <div>
       <div style={{background:'#e40046', height:'100px'}}>
           <div >
+          <Link to={`/`}>    
               <span style={{float:'left', padding:'12px', margin:'13px 44px 12px 90px'}}>
-              <img src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg" alt="" />
+                 
+                    <img src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg" alt='imagelogo' />
               </span>
+                  </Link>
           </div>
           <div style={{float:'right', padding:'12px', margin:'12px 80px 4px 10px'}}>
               <a href="" style={{textDecoration:'none', color:'#fff'}}>100% Payment Protection, Easy Returns Policy</a>

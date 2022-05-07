@@ -143,5 +143,11 @@
   background-color: #333;
 }
   
-
+.product-item:hover{
+  box-shadow: 0px 7px 8px 0.5px #e1e4e4;
+  cursor: pointer;
+}
+.link-sec{
+  text-decoration: none;
+}
 

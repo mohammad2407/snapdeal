@@ -1,7 +1,7 @@
 .sub-footer{
     width: 25%;
     padding: 2%;
-    border: 0.1px solid #c5c3c3
+    border: 0.1px solid #e6e4e4
 }
 .footer-icons{
     width:25%;
@@ -10,5 +10,37 @@
     height: 200px;
 
 }
+
+.footer-bigtxt{
+    color:#827e7e;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer-smalltxt{
+    font-size: 14px;
+    color:#ccc
+}
+
+.footer-icons-3{
+    width:4%;
+    height: 10px;
+    margin-right: 10px;
+}
+.footer-icons > img{
+    width:100%
+}
+
+.footer-desc-text{
+    font-size: 13px;
+    text-decoration: none;
+    color:#949292
+}
+.footer-desc-text:hover{
+    text-decoration: underline;
+    color: #4f4e4e;
+}
+
 
 

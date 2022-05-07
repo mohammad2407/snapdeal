@@ -44,3 +44,32 @@
     box-sizing: border-box;
     height: 42px
 }
+
+.poster-image{
+    background-image: url(https://i2.sdlcdn.com/img/appScreenshot@2x.png);
+    background-size: 426px 462px;
+    width: 35%;
+    height: 500px;
+    background-repeat: no-repeat;
+    margin-left: 10%;
+}
+.poster{
+    margin-top:90%;
+    width:100%;
+    background-color: white;
+}
+
+.download-div{
+    text-align: left;
+    width: 30%;
+    margin-left: 10%;
+}
+
+.leaf-image{
+    background-image: url(https://i2.sdlcdn.com/img/leaves2x.png);
+    background-size: 220px 300px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 300px;
+}

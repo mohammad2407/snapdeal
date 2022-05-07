@@ -1,6 +1,8 @@
 import React from 'react'
-
+import { useSelector } from 'react-redux'
+import { store } from '../redux/store'
 export const Summary = () => {
+  const {cart} = useSelector(store => store)
   return (
     <div >
         <div className='summary-wrapper' style={{padding:'0px',}}>

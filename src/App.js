@@ -5,13 +5,13 @@ import { Home } from './Home/Home';
 // import { NavCarousel } from './NavComponents/Carousels/NavCarousel';
 import Footer from './Footer/Footer';
 import Payment from './payment/Payment';
+import { Mens } from './Product/Mens';
+import { Route } from 'react-router';
+import { Routing } from './Routes/Routing';
 function App() {
   return (
     <div className="App">
-      <Nav1 style={{zIndex:'10'}}/>
-      {/* <Home />
-      <Footer />
-      <Payment /> */}
+      <Routing />
     </div>
   );
 }
